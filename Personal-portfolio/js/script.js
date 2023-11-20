@@ -10,11 +10,11 @@ let typeData = new Typed(".role", {
   backSpeed: 80,
   backDelay: 1000,
 });
-
+//
 function adjustLayout() {
-  var screenWidth = window.innerWidth;
-  var prefixElement = document.querySelector(".prefix");
-  var roleElement = document.querySelector(".role");
+  let screenWidth = window.innerWidth;
+  let prefixElement = document.querySelector(".prefix");
+  let roleElement = document.querySelector(".role");
 
   if (screenWidth < 544) {
     prefixElement.innerHTML = "I am a<br>";
@@ -25,14 +25,6 @@ function adjustLayout() {
     roleElement.style.marginTop = "0";
   }
 }
-
-// Call the function on page load and window resize
 document.addEventListener("DOMContentLoaded", adjustLayout);
 window.addEventListener("resize", adjustLayout);
-
-// mobile navigation work
-const navButtonEl = document.querySelector(".mobile-nav-btn");
-const headerEl = document.querySelector(".header");
-navButtonEl.addEventListener("click", function () {
-  headerEl.classList.toggle("nav-open");
-});
+//

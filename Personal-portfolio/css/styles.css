@@ -59,6 +59,7 @@ GENERAL STYLES
   margin: 0 auto;
   height: 9.6rem;
   padding-top: 1.6rem;
+  position: relative;
 }
 .header .container {
   align-items: center;
@@ -90,22 +91,6 @@ GENERAL STYLES
 
 .nav-list a:is(:hover, :active) {
   font-weight: bold;
-}
-
-/* mobile nav */
-.mobile-nav-btn {
-  border: none;
-  background: none;
-  cursor: pointer;
-
-  display: none;
-}
-.mobile-nav-icon {
-  font-size: 4.8rem;
-  color: #333;
-}
-.mobile-nav-icon[name="close-outline"] {
-  display: none;
 }
 
 /*  STYLING HERO SECTION */

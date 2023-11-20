@@ -203,23 +203,7 @@
     margin-top: 1.6rem;
     gap: 2.4rem;
   }
-
-  /* mobile navigation */
-  .mobile-nav-btn {
-    display: block;
-  }
-  .main-nav {
-    display: none;
-  }
-
-  .nav-open .mobile-nav-icon[name="close-outline"] {
-    display: block;
-  }
-  .nav-open .mobile-nav-icon[name="menu-outline"] {
-    display: none;
-  }
 }
-
 /* For PHONES  (544px) */
 
 @media (max-width: 34em) {
@@ -237,8 +221,43 @@
   .hero-description-box {
     max-width: 90%;
   }
+  .pink-btn {
+    padding: 0.8rem 3.2rem;
+  }
+  .user-image img {
+    width: 100%;
+  }
+
+  /*  STYLING PROJECT SECTION */
+  .project-card {
+    width: 100%;
+  }
+  .project-section .container {
+    padding: 0rem 1.2rem;
+  }
+
+  /*  STYLING SKILLS SECTION */
+  .skill-subHeading {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .skills-logo {
+    margin-top: 1.2rem;
+  }
   /* <!-- STYLING CONTACT ME SECTION  --> */
   .contactme-section .container {
-    padding: 0rem;
+    padding: 2.4rem 0rem;
+  }
+
+  .contactus-sub-heading {
+    font-size: 1.6rem;
+  }
+  .contactus-form-container {
+    margin-top: 1.6rem;
+  }
+  /* MOBILE NAV */
+  .main-nav {
+    display: none;
   }
 }
