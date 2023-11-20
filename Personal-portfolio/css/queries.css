@@ -74,6 +74,9 @@
     line-height: 3.6rem;
   }
 
+  .hero-description-box {
+    max-width: 70%;
+  }
   .faded-text {
     font-size: 6.2rem;
     bottom: -36%;
@@ -88,7 +91,7 @@
   /*  STYLING SKILLS SECTION */
   .skill-faded-text {
     font-size: 6.2rem;
-    right: -50px;
+    right: -30px;
     top: 107.5%;
   }
 
@@ -214,5 +217,28 @@
   }
   .nav-open .mobile-nav-icon[name="menu-outline"] {
     display: none;
+  }
+}
+
+/* For PHONES  (544px) */
+
+@media (max-width: 34em) {
+  /*  STYLING HERO SECTION */
+  .hero-heading,
+  .hero-subheading {
+    font-size: 2rem;
+  }
+  .hero-subheading {
+    font-size: 3rem;
+  }
+  .role {
+    margin-top: 1.2rem;
+  }
+  .hero-description-box {
+    max-width: 90%;
+  }
+  /* <!-- STYLING CONTACT ME SECTION  --> */
+  .contactme-section .container {
+    padding: 0rem;
   }
 }
