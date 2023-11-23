@@ -203,7 +203,59 @@
     margin-top: 1.6rem;
     gap: 2.4rem;
   }
+
+  /* mobile navigation */
+  .header {
+    position: relative;
+  }
+  .mobile-nav-btn {
+    display: block;
+    z-index: 9;
+  }
+  .main-nav {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in;
+    z-index: 6;
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .mobile-nav-icon[name="close-outline"] {
+    display: block;
+    z-index: 9;
+  }
+  .nav-open .mobile-nav-icon[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-list {
+    align-items: center;
+    flex-direction: column;
+    gap: 4.8rem;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+  }
+  .nav-list a:is(:link, :visited) {
+    font-size: 3.2rem;
+  }
 }
+
 /* For PHONES  (544px) */
 
 @media (max-width: 34em) {
@@ -255,9 +307,5 @@
   }
   .contactus-form-container {
     margin-top: 1.6rem;
-  }
-  /* MOBILE NAV */
-  .main-nav {
-    display: none;
   }
 }

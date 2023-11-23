@@ -1,3 +1,12 @@
+// mobile navigation work
+const navButtonEl = document.querySelector(".mobile-nav-btn");
+const headerEl = document.querySelector(".header");
+navButtonEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
+
+// For role span
+
 let typeData = new Typed(".role", {
   strings: [
     "Web Developer",
@@ -28,3 +37,28 @@ function adjustLayout() {
 document.addEventListener("DOMContentLoaded", adjustLayout);
 window.addEventListener("resize", adjustLayout);
 //
+
+//Smooth Scrolling
+
+const allLinks = document.querySelectorAll("a:link");
+
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+
+    if (href === "#")
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+    //close Mobile Nav on click
+    if (link.classList.contains("nav-link"))
+      headerEl.classList.toggle("nav-open");
+  });
+});
