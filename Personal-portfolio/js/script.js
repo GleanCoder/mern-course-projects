@@ -1,18 +1,8 @@
-// mobile navigation work
-// const navButtonEl = document.querySelector(".mobile-nav-btn");
-// const headerEl = document.querySelector(".header");
-// navButtonEl.addEventListener("click", function () {
-//   headerEl.classList.toggle("nav-open");
-
-//   // Close mobile navigation when a link is clicked
-//   navLinks.addEventListener("click", function () {
-//     navLinks.classList.remove("nav-open");
-//   });
-// });
+// // Mobile Navbar
 
 const navButtonEl = document.querySelector(".mobile-nav-btn");
 const headerEl = document.querySelector(".header");
-const navLinks = document.querySelector(".nav-link"); // Replace with the actual class name of your navigation links
+const navLinks = document.querySelector(".nav-link");
 
 navButtonEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
