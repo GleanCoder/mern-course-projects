@@ -1,8 +1,26 @@
 // mobile navigation work
+// const navButtonEl = document.querySelector(".mobile-nav-btn");
+// const headerEl = document.querySelector(".header");
+// navButtonEl.addEventListener("click", function () {
+//   headerEl.classList.toggle("nav-open");
+
+//   // Close mobile navigation when a link is clicked
+//   navLinks.addEventListener("click", function () {
+//     navLinks.classList.remove("nav-open");
+//   });
+// });
+
 const navButtonEl = document.querySelector(".mobile-nav-btn");
 const headerEl = document.querySelector(".header");
+const navLinks = document.querySelector(".nav-link"); // Replace with the actual class name of your navigation links
+
 navButtonEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
+});
+
+// Close mobile navigation when a link is clicked
+navLinks.addEventListener("click", function () {
+  headerEl.classList.remove("nav-open");
 });
 
 // For role span
@@ -36,29 +54,3 @@ function adjustLayout() {
 }
 document.addEventListener("DOMContentLoaded", adjustLayout);
 window.addEventListener("resize", adjustLayout);
-//
-
-//Smooth Scrolling
-
-const allLinks = document.querySelectorAll("a:link");
-
-allLinks.forEach(function (link) {
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
-    const href = link.getAttribute("href");
-
-    if (href === "#")
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-
-    if (href !== "#" && href.startsWith("#")) {
-      const sectionEl = document.querySelector(href);
-      sectionEl.scrollIntoView({ behavior: "smooth" });
-    }
-    //close Mobile Nav on click
-    if (link.classList.contains("nav-link"))
-      headerEl.classList.toggle("nav-open");
-  });
-});
