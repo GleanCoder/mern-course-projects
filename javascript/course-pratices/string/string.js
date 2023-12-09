@@ -1,7 +1,8 @@
 // The belows are the primitive type Strings
 const firstName = "Aditya Kiran";
 const lastName = "Acharya";
-
+const fullNameOf = firstName + " " + lastName;
+console.log("My Name is" + " " + fullNameOf);
 // how to declare a object type string
 
 const fullName = new String("Aditya Kiran Acharya");
