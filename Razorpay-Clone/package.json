@@ -2,7 +2,7 @@
   "name": "tailwind_demo",
   "version": "1.0.0",
   "description": "Tailwind",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "start": "vite"
   },
