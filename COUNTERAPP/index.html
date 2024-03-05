@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COUNTER-APP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Wrapper -->
+    <div
+      id="wrapper"
+      class="w-[100vw] h-[100vh] bg-[#344151] flex flex-col items-center justify-center gap-10"
+    >
+      <h2 id="heading" class="font-medium text-[20px] text-[#03984d]">
+        Increment and Decrement
+      </h2>
+      <!-- Container Box -->
+      <div
+        id="container"
+        class="bg-white flex p-3 px-5 gap-12 text-[#344151] text-[25px] rounded-sm overflow-x-hidden"
+      >
+        <!-- Increment Button -->
+        <button id="increment" class="border-r-2 border-[#bfbfbf] pr-5">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <div id="counterText" class="font-bold">0</div>
+        <!-- Decrement Button -->
+        <button id="decrement" class="border-l-2 border-[#bfbfbf] pl-5">
+          <i class="fa-solid fa-minus"></i>
+        </button>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+      integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
