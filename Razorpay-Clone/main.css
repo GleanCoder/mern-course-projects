@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.core-features {
+  background-size: 100% 100%;
+}
+
+.core-feature-card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 20px;
+}
+
+.core-feature-card:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.movecompanies {
+  animation: 10s infinite linear moveCompany;
+}
+
+@keyframes moveCompany {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: -50%;
+  }
+}
+
+.blury-top {
+  background: linear-gradient(180deg, #f4f8ff, #fff0);
+}
+.blury-bottom {
+  background: linear-gradient(0deg, #f4f8ff, #fff0);
+}
