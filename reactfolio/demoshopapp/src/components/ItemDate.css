@@ -1,0 +1,8 @@
+.mfg-date {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: beige;
+}
