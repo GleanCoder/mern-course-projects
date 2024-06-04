@@ -11,9 +11,14 @@
       <h1>PASSWORD GENERATOR</h1>
       <!-- Display Container -->
       <section class="display-container">
-        <input readonly dataPasswordDisplayer />
+        <input
+          readonly
+          dataPasswordDisplayer
+          class="display"
+          placeholder="password"
+        />
         <button class="copy-btn">
-          <span class="copy-msg"></span>
+          <span class="copy-msg tooltip"></span>
           <img
             src="./assets/copy.svg"
             alt="copy button image"
@@ -28,29 +33,38 @@
           <p>password Length</p>
           <p password-length-counter>0</p>
         </div>
-        <input type="range" min="0" max="20" step="1" id="input-slider" />
-        <div class="checkbox">
-          <input type="checkbox" name="" id="uppercase" />
+        <input
+          type="range"
+          min="0"
+          max="20"
+          step="1"
+          id="input-slider"
+          class="slider"
+        />
+        <div class="checkbox check">
+          <input type="checkbox" name="" id="uppercase" class="check" />
           <label for="uppercase">Include Uppercase Letters</label>
         </div>
-        <div class="checkbox">
-          <input type="checkbox" name="" id="lowercase" />
+        <div class="checkbox check">
+          <input type="checkbox" name="" id="lowercase" class="check" />
           <label for="lowercase">Include Lowercase Letters</label>
         </div>
-        <div class="checkbox">
-          <input type="checkbox" name="" id="number" />
+        <div class="checkbox check">
+          <input type="checkbox" name="" id="number" class="check" />
           <label for="number"> Include Numbers</label>
         </div>
-        <div class="checkbox">
+        <div class="checkbox check">
           <input type="checkbox" name="" id="symbol" />
           <label for="symbol">Include Symbols</label>
         </div>
 
         <div class="strength-container">
           <p>Strength</p>
-          <span data-indicator></span>
+          <span data-indicator class="indicator"></span>
         </div>
-        <button password-generator>Generate password</button>
+        <button password-generator class="generateButton">
+          Generate password
+        </button>
       </section>
     </div>
 
