@@ -1,6 +1,6 @@
 function Dashboard() {
   return (
-    <div className="text-[52px] text-white flex justify-center items-center mt-[15%]">
+    <div className="text-4xl text-white flex justify-center items-center h-full text-center">
       Welcome To StudyNotion
     </div>
   );
