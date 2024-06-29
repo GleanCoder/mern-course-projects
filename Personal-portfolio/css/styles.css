@@ -388,7 +388,7 @@ GENERAL STYLES
 }
 
 .project-number-right {
-  right: -40px;
+  right: -90px;
   top: -45px;
 }
 .project-content {
@@ -406,7 +406,7 @@ GENERAL STYLES
 }
 
 .project-content-right {
-  right: -10%;
+  right: 10%;
 }
 .project-skills-container {
   width: 60%;

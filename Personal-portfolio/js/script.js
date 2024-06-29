@@ -16,12 +16,7 @@ navLinks.addEventListener("click", function () {
 // For role span
 
 let typeData = new Typed(".role", {
-  strings: [
-    "Web Developer",
-    "Front-End Developer",
-    "Coder",
-    "Open-Source enthuasiast",
-  ],
+  strings: ["Web Developer", "Front-End Developer", "Coder", "Designer"],
   loop: true,
   typeSpeed: 100,
   backSpeed: 80,
